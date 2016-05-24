@@ -26,22 +26,29 @@
 			color: $text-contrast-palette-primary_1;
 		}
 	}
+	h5,
+	h6 {
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	body,
 	#tertiary-menu li a,
 	#secondary-menu li a,
-	.site-title a {
+	.site-title a,
+	.slogan {
 		color: $text-contrast-palette-primary_1;
 	}
 	.background-secondary {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
-		.button-primary {
-			border: 1px solid $text-contrast-palette-primary_1;
-			color: $text-contrast-palette-primary_1;
-			&:hover, &:focus {
-				background: $text-contrast-palette-primary_1;
-				color: $palette-primary_1;
-			}
-		}
+	}
+	.button-primary:hover,
+	.button-primary:focus,
+	input[type="submit"]:hover,
+	input[type="submit"]:focus,
+	.form-submit .submit:hover,
+	.form-submit .submit:focus {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
 	}
 
 	/*-----------------------------------------------
@@ -53,6 +60,18 @@
 		h2 {
 			color: $text-contrast-palette-primary_2;
 		}
+	}
+	hr,
+	.gridblock hr {
+		background: $palette-primary_2;
+	}
+	.widget-title,
+	.widget-area ul,
+	.comment-reply-title,
+	.comments-title,
+	#header-upper-right li.menu-social a,
+	#footer-widget-area li a {
+	    color: $text-contrast-palette-primary_2;
 	}
 
 	/*-----------------------------------------------
@@ -69,6 +88,9 @@
 				color: $palette-primary_3;
 			}
 		}
+	}
+	.widget-area {
+	    border: 1px solid $text-contrast-palette-primary_3;
 	}
 	#tertiary-menu li:after,
 	#secondary-menu li:after {
@@ -91,9 +113,9 @@
 	a,
 	.entry-content ul,
 	.entry-content ol,
+	.search-field,
 	.mod-blockquote p,
 	.widget-title,
-	.entry-title,
 	#reply-title,
 	.comments-area,
 	.comments-area a,
@@ -102,7 +124,8 @@
 	.entry-meta,
 	.entry-meta,
 	.single .entry-title,
-	.archive .entry-title {
+	.archive .entry-title,
+	.menu-social li a {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.gridblock ul li:before {
@@ -119,15 +142,6 @@
 	.form-submit .submit {
 		border: 1px solid $text-contrast-palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
-	}
-	.button-primary:hover,
-	.button-primary:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	.form-submit .submit:hover,
-	.form-submit .submit:focus {
-		background: $text-contrast-palette-primary-neutral-color;
-		color: $palette-primary-neutral-color;
 	}
 	&.page-template-default {
 		.site-footer, .entry-footer {
@@ -150,14 +164,14 @@
 	/*-----------------------------------------------
 	## 1 - Buttons & Entry Footer
 	-----------------------------------------------*/
-	.button-secondary {
+	/*.button-secondary {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 		&:hover, &:focus {
 			background: none;
 			color: $text-contrast-palette-primary-neutral-color;
 		}
-	}
+	}*/
 	.page-template-page_home {
 		.entry-footer {
 			background: $palette-primary_1;
@@ -189,7 +203,9 @@
 					background: none;
 				}
 			}
-			li > a {
+			li > a,
+			li > a:hover,
+			li > a:focus {
 				color: $text-contrast-palette-primary_1;
 				&:hover, &:focus {
 					background: none;
@@ -224,12 +240,65 @@
 	/*-----------------------------------------------
 	## 3 - Call To Action Button
 	-----------------------------------------------*/
-	.call-to-action .button-primary {
+	.button-secondary {
+		background: $palette-primary_1;
 		border: 1px solid $palette-primary_3;
-		color: $text-contrast-palette-primary_2;
+		color: $text-contrast-palette-primary_1;
 		&:hover, &:focus {
-			background: $text-contrast-palette-primary_2;
-			color: $palette-primary_2;
+			background: $palette-primary_3;
+			color: $text-contrast-palette-primary_3;
 		}
+	}
+
+	/*-----------------------------------------------
+	# Et Cetera
+	-----------------------------------------------*/
+	.entry-title {
+		color: #ffffff;
+		text-shadow: 0 2px 5px #000;
+	}
+	.fa-facebook:hover,
+	.fa-facebook-f:hover,
+	.fa-facebook-official:hover,
+	.fa-facebook-square:hover {
+		color: #3b5998;
+	}
+	.fa-twitter:hover,
+	.fa-twitter-square:hover {
+		color: #00aced;
+	}
+	.fa-google:hover,
+	.fa-google-plus:hover,
+	.fa-google-plus-square:hover {
+		color: #dd4b39;
+	}
+	.fa-instagram:hover {
+		color: #517fa4;
+	}
+	.fa-linkedin:hover,
+	.fa-linkedin-square:hover {
+		color: #007bb6;
+	}
+	.fa-pinterest:hover,
+	.fa-pinterest-p:hover,
+	.fa-pinterest-square:hover {
+		color: #cb2027;
+	}
+	.fa-youtube:hover,
+	.fa-youtube-play:hover,
+	.fa-youtube-square:hover {
+		color: #bb0000;
+	}
+	.woocommerce #respond input#submit, 
+	.woocommerce a.button,
+	.woocommerce button.button, 
+	.woocommerce input.button,
+	.woocommerce p.buttons a.button {
+	    background-color: #a46497;
+	    color: #fff;
+	}
+	.woocommerce p.buttons a.button:hover {
+		background-color: #dad8da;
+	    color: #515151;
 	}
 }

@@ -5,6 +5,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	 */
 	$boldgrid_framework_configs['theme_name'] = 'boldgrid-diced'; // Text domain
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
+	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 
 	/**
@@ -28,7 +29,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			'colors' => array(
 				'#ffffff',
                 '#000000',
-                '#ffffff',
+                '#a0a0a0',
 			)
 		),
 		array (
@@ -86,9 +87,28 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['colors']['light_text'] = '#ffffff';
 	$boldgrid_framework_configs['customizer-options']['colors']['dark_text'] = '#000000';
 
-	// Fonts & Icons
-	$boldgrid_framework_configs['font']['types'] = array ( 'Fjalla+One:400|Italianno:400|Raleway:300|Open+Sans:300,400' );
-	$boldgrid_framework_configs['font']['translators'] = array ( 'on' );
+	// Typography Headings
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_family'] = 'Raleway';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_font_size'] = 22;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_text_transform'] = 'uppercase';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['headings_line_height'] = 150;
+
+	// Typography Alternate Headings
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_family'] = 'Italianno';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_font_size'] = 24;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['alternate_headings_text_transform'] = 'none';
+
+	// Typography Navigation
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_family'] = 'Open Sans';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_font_size'] = 14;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['navigation_text_transform'] = 'uppercase';
+
+	// Typography Body
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_family'] = 'Open Sans';
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_font_size'] = 14;
+	$boldgrid_framework_configs['customizer-options']['typography']['defaults']['body_line_height'] = 160;
+
+	// Icons
 	$boldgrid_framework_configs['social-icons']['type'] = 'icon';
 	$boldgrid_framework_configs['social-icons']['size'] = 'large';
 
@@ -106,8 +126,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			<div class="col-md-12">
 				<div class="call-to-action">
 					<h2 class="slogan">WE'VE GOT A LOT OF FRESH IDEAS TO SHARE</h2>
-					<p class="p-button-primary">
-						<a class="button-primary" href="about-us">LEARN MORE</a>
+					<p class="p-button-secondary">
+						<a class="button-secondary" href="about-us">LEARN MORE</a>
 					</p>
 				</div>
 			</div>
