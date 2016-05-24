@@ -1,0 +1,722 @@
+/*
+Theme Name: Diced
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+/*------------------------------------------------------------------------
+# RTL
+------------------------------------------------------------------------*/
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+/*------------------------------------------------------------------------
+# Base Styles
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Background
+-----------------------------------------------*/
+body,
+.custom-background {
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+.background-primary {
+	background: #fff;
+}
+.background-secondary {
+	background: #000;
+	color: #fff;
+	margin-top: 0;
+}
+
+/*-----------------------------------------------
+## Positioning
+-----------------------------------------------*/
+.entry-content {
+	padding-top: 0;
+}
+.page-template-default .entry-content {
+	padding-bottom: 75px;
+}
+.xs-center,
+.mod-img,
+.mod-img-circle,
+.p-button-primary,
+.p-button-secondary {
+	text-align: center;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.xs-center,
+	.mod-img,
+	.mod-img-circle,
+	.gridblock .p-button-primary,
+	.gridblock .p-button-secondary {
+		text-align: right;
+	}
+}
+
+/*-----------------------------------------------
+## Typography
+-----------------------------------------------*/
+body {
+	color: #000;
+	font-family: 'Open Sans';
+	font-weight: 400;
+}
+.entry-content ul, 
+.entry-content ol {
+	color: #000;
+	font-size: 13px;
+	line-height: 24px;
+	padding-right: 27px;
+	text-indent: 7px;
+}
+
+/*-----------------------------------------------
+## Titles
+-----------------------------------------------*/
+.page-template-page_home .entry-title {
+	display: none;
+}
+.page-template-page_home .entry-content h2,
+.entry-title {
+	font-family: 'Italianno';
+	font-size: 70px;
+	font-weight: 400;
+	line-height: 0.75;
+	margin-bottom: 30px;
+    margin-top: 30px;
+}
+.background-secondary h2 {
+	margin-top: 50px;
+}
+
+/* Headings */
+.hentry {
+	margin: 0 auto;	
+}
+.heading h3 {
+    margin-top: 10px;
+}
+.heading {
+    margin-bottom: 15px;
+}
+
+/*-----------------------------------------------
+## Links
+-----------------------------------------------*/
+.entry-content a,
+.entry-footer a {
+	text-decoration: underline;
+}
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-footer a:hover,
+.entry-footer a:focus {
+	text-decoration: none;
+}
+
+/*-----------------------------------------------
+## Buttons
+-----------------------------------------------*/
+.button-primary,
+.button-secondary,
+input[type="submit"],
+.form-submit .submit {
+	font-family: 'Raleway';
+	font-size: 12px;
+	line-height: 1.25;
+	padding: 10px 25px;
+	/* Border Radius */
+	-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+	border-radius: 2px; 
+}
+.entry-content .button-primary,
+.entry-content .button-secondary,
+.entry-content input[type="submit"],
+.entry-content .form-submit .submit {
+	text-decoration: none;
+}
+.call-to-action .button-primary,
+.background-secondary .button-primary {
+	border: 1px solid #fff;
+	color: #fff;
+}
+.button-primary,
+input[type="submit"],
+.form-submit .submit {
+	background: none;
+	border: 1px solid #000;
+	color: #000;
+}
+.button-secondary {
+	background: #000;
+	border: 1px solid #000;
+	color: #fff;
+}
+
+/* Hover */
+.button-primary:hover,
+.button-primary:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.form-submit .submit:hover,
+.form-submit .submit:focus {
+	background: #000;
+	color: #fff;
+	text-decoration: none;
+}
+.call-to-action .button-primary:hover,
+.call-to-action .button-primary:focus,
+.background-secondary .button-primary:hover,
+.background-secondary .button-primary:focus {
+	background: #fff;
+	color: #000;
+}
+.button-secondary:hover,
+.button-secondary:active {
+	background: none;
+	color: #000;
+	text-decoration: none;
+}
+
+/* Positioning */
+.p-button-primary,
+.p-button-secondary {
+	margin-bottom: 50px;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	white-space: nowrap;
+}
+.call-to-action .p-button-primary {
+	margin-bottom: 0;
+	margin-top: 25px;
+}
+.gridblock .p-button-secondary {
+	margin-top: -25px;
+}
+
+/* Block vs. Inline */
+.button-primary,
+.button-secondary {
+	display: block;
+	margin-top: 15px;
+}
+
+/* sm */
+@media (min-width: 500px) {
+	.button-primary,
+	.button-secondary {
+		display: inline;
+    	margin-top: 0;
+	}
+	.gridblock .p-button-secondary {
+		margin-top: 0;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Header
+------------------------------------------------------------------------*/
+.site-header {
+	background: rgba(0, 0, 0, 0.8);
+}
+.site-title {
+	font-weight: normal;
+	text-align: center;
+}
+.site-title a {
+	color: #fff;
+}
+
+/* Tagline / Site Description */
+h3.site-description {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+/* Call To Action */
+.call-to-action {
+	background: rgba(0, 0, 0, 0.8);
+	margin: 50px auto;
+	padding: 25px;
+	text-align: center;
+	width: 100%;
+	/* Border Radius */
+	-webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+	border-radius: 7px; 
+}
+.slogan {
+	color: #fff;
+	font-family: 'Raleway';
+	font-weight: 200;
+	font-size: 30px;
+	line-height: 1.25;
+	padding: 0 25px;
+	word-wrap: break-word;
+}
+
+/* sm */
+@media (min-width: 768px) {
+	.slogan {
+		font-size: 40px;
+	}
+}
+
+/* md */
+@media (min-width: 992px) {
+	.slogan {
+		font-size: 50px;
+	}
+}
+
+/*------------------------------------------------------------------------
+# Navigation
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Main Menu
+-----------------------------------------------*/
+/* Typography */
+#site-navigation {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+/* Nav Reset */
+.navbar {
+	background: none;
+	border: none;
+	/* Border Radius */
+	-webkit-border-radius: 0;
+    -moz-border-radius: 0;
+	border-radius: 0;  
+}
+.navbar-default {
+	margin-bottom: 0;
+}
+
+/* Nav Center */
+.navbar .navbar-nav {
+  	display: inline-block;
+  	float: none;
+  	vertical-align: top;
+}
+.navbar .navbar-collapse {
+  	text-align: center;
+}
+.navbar-collapse { 
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* Nav Links */
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+/* Hover */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	background: none;
+	color: #fff;
+	text-decoration: underline;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background: none;
+	text-decoration: underline;
+}
+/* sm */
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav > li > a {
+		border-left: 2px solid #fff;
+    	padding: 3px 25px;
+	}
+	.navbar-default .navbar-nav > li:last-child > a {
+		border-left: none;
+	}
+}
+
+/*-----------------------------------------------
+## Other Menus
+-----------------------------------------------*/
+#secondary-menu {
+	background: none;	
+	text-align: center;
+}
+#footer-center-menu li a,
+#secondary-menu li a,
+#tertiary-menu li a {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-weight: 300;
+	text-transform: uppercase;
+	padding: 0 1.2em;	
+}
+#tertiary-menu {
+	background: none;	
+	text-align: center;
+}
+#header-upper-right {
+	text-align: center;	
+	width: auto;
+}
+#header-upper-right li a {
+	padding: 8px;
+}
+.footer-center-items {
+    padding: 0;
+}
+
+/*-----------------------------------------------
+## Social Menus
+-----------------------------------------------*/
+#header-upper-right li.menu-social a {
+	color: #333;	
+}
+#menu-social li.menu-item a {
+	font-size: 16px;	
+}
+#menu-social li.menu-social a {
+	font-size: 18px;	
+}
+#header-upper-right li.menu-social:after,
+#secondary-menu li.menu-social:after,
+#footer-center-menu li.menu-social:after  {
+	content: "";	
+}
+#primary-navbar li.menu-social a {
+	border-left: none;	
+	padding: 8px;
+}
+#footer-center-menu li.menu-social a {
+	padding: 8px;	
+}
+
+/* md */
+@media (min-width: 992px) {
+	.call-to-action {
+		margin: 150px auto 200px;
+		padding: 25px 75px 50px;
+		width: 55%;
+	}
+}
+
+/* Social Icons */
+.menu-social ul {
+	margin-top: 2em;
+	padding-right: 0px;
+	text-align: center;
+}
+.menu-social ul li {
+    position: relative;
+    display:  inline-block;    
+}
+.menu-social li a {
+	color: #fff;
+	display: inline-block;
+	padding: 8px;
+}
+.fa-facebook:hover,
+.fa-facebook-f:hover,
+.fa-facebook-official:hover,
+.fa-facebook-square:hover {
+	color: #3b5998;
+}
+.fa-twitter:hover,
+.fa-twitter-square:hover {
+	color: #00aced;
+}
+.fa-google:hover,
+.fa-google-plus:hover,
+.fa-google-plus-square:hover {
+	color: #dd4b39;
+}
+.fa-instagram:hover {
+	color: #517fa4;
+}
+.fa-linkedin:hover,
+.fa-linkedin-square:hover {
+	color: #007bb6;
+}
+.fa-pinterest:hover,
+.fa-pinterest-p:hover,
+.fa-pinterest-square:hover {
+	color: #cb2027;
+}
+.fa-youtube:hover,
+.fa-youtube-play:hover,
+.fa-youtube-square:hover {
+	color: #bb0000;
+}
+
+/*------------------------------------------------------------------------
+# GridBlocks
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Positioning
+-----------------------------------------------*/
+.gridblock h1, 
+.gridblock h2, 
+.gridblock h3, 
+.gridblock h4, 
+.gridblock h5, 
+.gridblock h6,
+.gridblock ol, 
+.gridblock ul, 
+.gridblock li,
+.gridblock p {
+	margin: 10px 0;
+}
+
+/*-----------------------------------------------
+## Alternates
+-----------------------------------------------*/
+.gridblock .font-alt {
+	font-family: 'Italianno';
+}
+.gridblock ul {
+	list-style-type: none;
+	padding-right: 1px;
+}
+.gridblock ul li:before {
+    content: '';
+    display: inline-block;
+    margin-left: 8px;
+    position: relative;
+    width: 0;
+    height: 0;
+    border-bottom: 8px solid #000;
+    border-left: 8px solid transparent;
+}
+.gridblock hr {
+	background: #000;
+	border: 0;
+	height: 2px;
+}
+
+/*------------------------------------------------------------------------
+# Modules
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Universal
+-----------------------------------------------*/
+.mod-reset {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.mod-space,
+.mod-space-2x,
+.mod-space-3x,
+.mod-space-4x,
+.mod-space-5x {
+	background: none;
+}
+.mod-space {
+	height: 20px;
+}
+.mod-space-2x {
+	height: 40px;
+}
+.mod-space-3x {
+	height: 60px;
+}
+.mod-space-4x {
+	height: 80px;
+}
+.mod-space-5x {
+	height: 100px;
+}
+
+/* Images */
+.mod-img,
+.mod-img-circle,
+.image-gallery img,
+.video-gallery img,
+.slideshow-gallery img {
+	margin-bottom: 15px;	
+}
+.mod-img-circle img {
+	border-radius: 50%;
+}
+
+/*-----------------------------------------------
+## Global
+-----------------------------------------------*/
+.mod-space-lg {
+	background: none;
+	height: 150px;
+}
+.mod-blockquote {
+	border-color: #000;
+	color: #000;
+	font-family: "Italianno";
+	font-size: 34px;
+	line-height: 34px;
+}
+.mod-gallery-fullwidth {
+
+}
+
+/*------------------------------------------------------------------------
+# Pages
+------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------
+# Posts
+------------------------------------------------------------------------*/
+.widget-area {
+    border: 1px solid #ccc;
+    margin-top: 45px;
+	padding: 25px;
+}
+.widget-title {
+    color: #555;
+    font-family: 'Fjalla One';
+    font-size: 18px;
+}
+.widget-area ul {
+	color: #555;	
+}
+.search-field {
+	color: #000;	
+}
+#footer-widget-area {
+	text-align: right;	
+}
+#footer-widget-area li a {
+	color: #333;	
+}
+
+/* Search Form */
+.form-control {
+	display: inline-block;	
+}
+
+/* Comments */
+.comment-reply-title,
+.comments-title {
+	color: #555;
+    font-family: 'Fjalla One';
+    font-size: 24px;
+}
+.comment-form-comment label {
+    float: right;
+    padding-left: 15px;
+}
+
+/*------------------------------------------------------------------------
+# Plugins
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## WooCommerce
+-----------------------------------------------*/
+.woocommerce h2 {
+	font-family: "Open Sans";	
+	font-size: 24px;
+	font-weight: 600;
+}
+.woocommerce #respond input#submit, 
+.woocommerce a.button,
+.woocommerce button.button, 
+.woocommerce input.button,
+.woocommerce p.buttons a.button {
+    background-color: #a46497;
+    color: #fff;
+}
+.woocommerce p.buttons a.button:hover {
+	background-color: #dad8da;
+    background-image: none;
+    color: #515151;
+    text-decoration: none;
+}
+.woocommerce .site-main {
+	padding-top: 20px;	
+}
+
+/*-----------------------------------------------
+## WC Gallery
+-----------------------------------------------*/
+.wc-gallery .gallery .gallery-icon a img {
+    margin-right: -27px;
+}
+.wc-gallery .gallery {
+    margin-right: 14px;
+}
+
+/*------------------------------------------------------------------------
+# Footer
+------------------------------------------------------------------------*/
+.site-footer {
+	font-family: 'Raleway';
+	font-size: 14px;
+	font-weight: 200;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.site-info {
+	margin-top: 15px;
+}
+.site-info a,
+.attribution a {
+	text-decoration: underline;
+}
+.site-info a:hover,
+.site-info a:focus,
+.attribution a:hover,
+.attribution a:focus {
+	text-decoration: none;
+}
+.disabled-footer.page-template-page_home .entry-footer {
+    padding: 6px 50px 10px 10px;
+    margin-bottom: -1em;
+}
+.disabled-footer .site-footer {
+	height: auto;
+	padding: 15px 0;
+}
+
+/* xs */
+.attribution {
+	padding-bottom: 30px;
+	margin-top: 5px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.attribution {
+		padding-bottom: 0;
+	}
+}
+
+/* Sticky Footer */
+html, body, .site, .site-content {
+	height: 100%;
+}
+#boldgrid-sticky-wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}

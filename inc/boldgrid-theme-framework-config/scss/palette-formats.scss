@@ -1,0 +1,235 @@
+/*------------------------------------------------------------------------
+# Palettes
+------------------------------------------------------------------------*/
+.palette-primary {
+
+	/*-----------------------------------------------
+	## 1
+	-----------------------------------------------*/
+	.site-header {
+		background: rgba($palette-primary_1, 0.9);
+		color: $text-contrast-palette-primary_1;
+	}
+	.site-footer, .site-footer a {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+	}
+	&.page-template-page_home {
+		.site-footer, .entry-footer {
+			background: $palette-primary_1;
+			color: $text-contrast-palette-primary_1;
+			a {
+				color: $text-contrast-palette-primary_1;
+			}
+		}
+		.post-edit-link {
+			color: $text-contrast-palette-primary_1;
+		}
+	}
+	#tertiary-menu li a,
+	#secondary-menu li a,
+	.site-title a {
+		color: $text-contrast-palette-primary_1;
+	}
+	.background-secondary {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+		.button-primary {
+			border: 1px solid $text-contrast-palette-primary_1;
+			color: $text-contrast-palette-primary_1;
+			&:hover, &:focus {
+				background: $text-contrast-palette-primary_1;
+				color: $palette-primary_1;
+			}
+		}
+	}
+
+	/*-----------------------------------------------
+	## 2
+	-----------------------------------------------*/
+	.call-to-action {
+		background: rgba($palette-primary_2, 0.9);
+		color: $text-contrast-palette-primary_2;
+		h2 {
+			color: $text-contrast-palette-primary_2;
+		}
+	}
+
+	/*-----------------------------------------------
+	## 3
+	-----------------------------------------------*/
+	#footer-center-menu {
+		.current_page_ancestor a {
+			&:link, &:visited {
+				color: $palette-primary_3;
+			}
+		}
+		.current_page_item a {
+			&:link, &:visited {
+				color: $palette-primary_3;
+			}
+		}
+	}
+	#tertiary-menu li:after,
+	#secondary-menu li:after {
+		color: $palette-primary_3;
+	}
+	@media (min-width: 768px) {
+		.navbar-default .navbar-nav {
+			> li > a {
+				border-right: 1px solid $palette-primary_3;
+			}
+			> li:last-child > a {
+				border-right: none;
+			}
+		}
+	}
+
+	/*-----------------------------------------------
+	## Neutral
+	-----------------------------------------------*/
+	a,
+	.entry-content ul,
+	.entry-content ol,
+	.mod-blockquote p,
+	.widget-title,
+	.entry-title,
+	#reply-title,
+	.comments-area,
+	.comments-area a,
+	.widget-area a,
+	.nav-links a,
+	.entry-meta,
+	.entry-meta,
+	.single .entry-title,
+	.archive .entry-title {
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.gridblock ul li:before {
+	    border-bottom: 8px solid $text-contrast-palette-primary-neutral-color;
+	}
+	#boldgrid-sticky-push,
+	#boldgrid-sticky-filler,
+	&.mce-content-body {
+		background: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.button-primary,
+	input[type="submit"],
+	.form-submit .submit {
+		border: 1px solid $text-contrast-palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.button-primary:hover,
+	.button-primary:focus,
+	input[type="submit"]:hover,
+	input[type="submit"]:focus,
+	.form-submit .submit:hover,
+	.form-submit .submit:focus {
+		background: $text-contrast-palette-primary-neutral-color;
+		color: $palette-primary-neutral-color;
+	}
+	&.page-template-default {
+		.site-footer, .entry-footer {
+			background: $palette-primary_1;
+			color: $text-contrast-palette-primary_1;
+			a {
+				color: $text-contrast-palette-primary_1;
+			}
+		}
+		.disabled-footer, .entry-footer {
+			background: $palette-primary-neutral-color;
+			color: $text-contrast-palette-primary-neutral-color;
+		}
+	}
+	.background-primary {
+		background: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
+
+	/*-----------------------------------------------
+	## 1 - Buttons & Entry Footer
+	-----------------------------------------------*/
+	.button-secondary {
+		background: $palette-primary_1;
+		color: $text-contrast-palette-primary_1;
+		&:hover, &:focus {
+			background: none;
+			color: $text-contrast-palette-primary-neutral-color;
+		}
+	}
+	.page-template-page_home {
+		.entry-footer {
+			background: $palette-primary_1;
+		}
+		.post-edit-link {
+			color: $text-contrast-palette-primary-neutral-color;
+		}
+	}
+	.current_page_ancestor,
+	.current_page_item {
+		a:link, a:visited {
+			text-decoration: underline;
+		}
+	}
+	.navbar-default .navbar-nav {
+		> {
+			.current-menu-parent {
+				color: $text-contrast-palette-primary_1;
+				text-decoration: underline;
+				> a {
+					color: $text-contrast-palette-primary_1;
+				}
+			}
+			.active > a {
+				background: none;
+				text-decoration: underline;
+				&:hover, &:focus {
+					color: $text-contrast-palette-primary_1;
+					background: none;
+				}
+			}
+			li > a {
+				color: $text-contrast-palette-primary_1;
+				&:hover, &:focus {
+					background: none;
+					text-decoration: underline;
+				}
+			}
+			li > .dropdown-menu {
+				background: $palette-primary_1;
+			}
+		}
+		.dropdown .dropdown-menu > {
+			.active > a {
+				background: $palette-primary_2;
+				color: $text-contrast-palette-primary_2;
+				&:hover, &:focus {
+					background: $palette-primary_2;
+					color: $text-contrast-palette-primary_2;
+				}
+			}
+			li > a {
+				color: $text-contrast-palette-primary_1;
+				text-decoration: none;
+				&:hover, &:focus {
+					text-decoration: underline;
+					background: $palette-primary_2;
+					color: $text-contrast-palette-primary_2;
+				}
+			}
+		}
+	}
+
+	/*-----------------------------------------------
+	## 3 - Call To Action Button
+	-----------------------------------------------*/
+	.call-to-action .button-primary {
+		border: 1px solid $palette-primary_3;
+		color: $text-contrast-palette-primary_2;
+		&:hover, &:focus {
+			background: $text-contrast-palette-primary_2;
+			color: $palette-primary_2;
+		}
+	}
+}
