@@ -7,7 +7,7 @@
 	## 1
 	-----------------------------------------------*/
 	.site-header {
-		background: rgba($palette-primary_1, 0.9);
+		background: rgba( $palette-primary_1, 0.9 );
 		color: $text-contrast-palette-primary_1;
 	}
 	.site-footer, .site-footer a {
@@ -128,8 +128,12 @@
 	.menu-social li a {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
+	.entry-content {
+		background-color: $palette-primary-neutral-color;
+		color: $text-contrast-palette-primary-neutral-color;
+	}
 	.gridblock ul li:before {
-	    border-bottom: 8px solid $text-contrast-palette-primary-neutral-color;
+		border-bottom: 8px solid $text-contrast-palette-primary-neutral-color;
 	}
 	#boldgrid-sticky-push,
 	#boldgrid-sticky-filler,
@@ -145,7 +149,7 @@
 	}
 	&.page-template-default {
 		.site-footer, .entry-footer {
-			background: $palette-primary_1;
+			background-color: $palette-primary_1;
 			color: $text-contrast-palette-primary_1;
 			a {
 				color: $text-contrast-palette-primary_1;
@@ -154,6 +158,10 @@
 		.disabled-footer, .entry-footer {
 			background: $palette-primary-neutral-color;
 			color: $text-contrast-palette-primary-neutral-color;
+		}
+		.entry-footer {
+			background: $palette-primary_1;
+			color: $text-contrast-palette-primary_1;
 		}
 	}
 	.background-primary {
@@ -172,6 +180,7 @@
 			color: $text-contrast-palette-primary-neutral-color;
 		}
 	}*/
+
 	.page-template-home {
 		.entry-footer {
 			background: $palette-primary_1;
@@ -294,11 +303,11 @@
 	.woocommerce button.button,
 	.woocommerce input.button,
 	.woocommerce p.buttons a.button {
-	    background-color: #a46497;
-	    color: #fff;
+		background-color: #a46497;
+		color: #fff;
 	}
 	.woocommerce p.buttons a.button:hover {
 		background-color: #dad8da;
-	    color: #515151;
+		color: #515151;
 	}
 }

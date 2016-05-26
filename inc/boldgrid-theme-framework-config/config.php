@@ -19,11 +19,11 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	// Specify the parent theme's name.
 	$boldgrid_framework_configs['parent-theme-name'] = 'prime';
 
-	// Select the footer template to use.
-	$boldgrid_framework_configs['template']['footer'] = '1';
-
 	// Select the header template to use.
 	$boldgrid_framework_configs['template']['header'] = 'generic';
+
+	// Select the footer template to use.
+	$boldgrid_framework_configs['template']['footer'] = 'generic';
 
 	// Assign Locations for Generic Header.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
@@ -32,6 +32,17 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'8' => array( '[action]boldgrid_site_identity', '[action]boldgrid_primary_navigation' ),
 		'11' => array( '[widget]boldgrid-widget-2' ),
 	);
+
+	// Assign Locations for Generic Header.
+	$boldgrid_framework_configs['template']['locations']['footer'] = array(
+		'1' => array( '[menu]social' ),
+		'5' => array( '[menu]footer_center' ),
+		'8' => array( '[widget]boldgrid-widget-3' ),
+		'11' => array( '[action]boldgrid_display_attribution_links' ),
+	);
+
+	// Social Menus.
+	$boldgrid_framework_configs['menu']['footer_menus'][] = 'social';
 
 	// Set the Call To Action Widget to be on Home Page Only.
 	$boldgrid_framework_configs['template']['call-to-action'] = 'home-only';
