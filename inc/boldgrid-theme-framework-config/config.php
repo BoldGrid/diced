@@ -30,7 +30,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'1' => array( '[menu]tertiary' ),
 		'5' => array( '[menu]secondary' ),
 		'8' => array( '[action]boldgrid_site_identity', '[action]boldgrid_primary_navigation' ),
-		'11' => array( '[menu]social', '[widget]boldgrid-widget-2' ),
+		'11' => array( '[widget]boldgrid-widget-2' ),
 	);
 
 	// Set the Call To Action Widget to be on Home Page Only.
@@ -40,7 +40,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['menu']['prototype']['primary']['container_id'] = 'primary-menu';
 
 	// Remove the container classes that are targetted with navbar-collapse.
-	$boldgrid_framework_configs['menu']['prototype']['primary']['container_class'] = 'primary-menu';
+	$boldgrid_framework_configs['menu']['prototype']['primary']['container_class'] = 'primary-menu text-center';
 
 	// Enable BoldGrid Color Palette System.
 	$boldgrid_framework_configs['customizer-options']['colors']['enabled'] = true;
