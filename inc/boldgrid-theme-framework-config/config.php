@@ -23,7 +23,15 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['template']['footer'] = '1';
 
 	// Select the header template to use.
-	$boldgrid_framework_configs['template']['header'] = '';
+	$boldgrid_framework_configs['template']['header'] = 'generic';
+
+	// Assign Locations for Generic Header.
+	$boldgrid_framework_configs['template']['locations']['header'] = array(
+		'1' => array( '[menu]tertiary' ),
+		'5' => array( '[menu]secondary' ),
+		'8' => array( '[action]boldgrid_site_identity', '[action]boldgrid_primary_navigation' ),
+		'11' => array( '[menu]social', '[widget]boldgrid-widget-2' ),
+	);
 
 	// Set the Call To Action Widget to be on Home Page Only.
 	$boldgrid_framework_configs['template']['call-to-action'] = 'home-only';
