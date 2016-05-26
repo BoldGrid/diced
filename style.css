@@ -102,7 +102,7 @@ body,
 body {
 	font-weight: 400;
 }
-.page-template-page_home .entry-content h2 {
+.page-template-home .entry-content h2 {
 	font-weight: 400;
 }
 .entry-title {
@@ -233,10 +233,10 @@ h3.site-description {
 /*-----------------------------------------------
 ## Titles
 -----------------------------------------------*/
-.page-template-page_home .entry-title {
+.page-template-home .entry-title {
 	display: none;
 }
-.page-template-page_home .entry-content h2 {
+.page-template-home .entry-content h2 {
 	margin-bottom: 30px;
 	margin-top: 30px;
 }
@@ -651,7 +651,7 @@ h3.site-description {
 .site-info {
 	margin-top: 15px;
 }
-.disabled-footer.page-template-page_home .entry-footer {
+.disabled-footer.page-template-home .entry-footer {
 	padding: 6px 10px 10px 50px;
 	margin-bottom: -1em;
 }
