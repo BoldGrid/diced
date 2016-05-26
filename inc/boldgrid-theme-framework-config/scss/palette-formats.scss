@@ -14,7 +14,7 @@
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	&.page-template-page_home {
+	&.page-template-home {
 		.site-footer, .entry-footer {
 			background: $palette-primary_1;
 			color: $text-contrast-palette-primary_1;
@@ -172,7 +172,7 @@
 			color: $text-contrast-palette-primary-neutral-color;
 		}
 	}*/
-	.page-template-page_home {
+	.page-template-home {
 		.entry-footer {
 			background: $palette-primary_1;
 		}
@@ -289,9 +289,9 @@
 	.fa-youtube-square:hover {
 		color: #bb0000;
 	}
-	.woocommerce #respond input#submit, 
+	.woocommerce #respond input#submit,
 	.woocommerce a.button,
-	.woocommerce button.button, 
+	.woocommerce button.button,
 	.woocommerce input.button,
 	.woocommerce p.buttons a.button {
 	    background-color: #a46497;
