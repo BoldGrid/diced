@@ -51,10 +51,10 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 -----------------------------------------------*/
 body,
 .custom-background {
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 .background-secondary {
 	margin-top: 0;
@@ -164,7 +164,7 @@ h3.site-description {
 	font-weight: 300;
 }
 .navbar .navbar-collapse {
-  	text-align: center;
+	text-align: center;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -202,7 +202,7 @@ h3.site-description {
 	font-weight: 600;
 }
 .woocommerce p.buttons a.button:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 .site-footer {
 	font-weight: 200;
@@ -238,7 +238,7 @@ h3.site-description {
 }
 .page-template-page_home .entry-content h2 {
 	margin-bottom: 30px;
-    margin-top: 30px;
+	margin-top: 30px;
 }
 .entry-title {
 	margin-bottom: 75px;
@@ -253,10 +253,10 @@ h3.site-description {
 	margin: 0 auto;
 }
 .heading h3 {
-    margin-top: 10px;
+	margin-top: 10px;
 }
 .heading {
-    margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 /*-----------------------------------------------
@@ -289,7 +289,7 @@ input[type="submit"],
 	padding: 10px 25px;
 	/* Border Radius */
 	-webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
+	-moz-border-radius: 2px;
 	border-radius: 2px;
 }
 
@@ -337,7 +337,7 @@ input[type="submit"],
 	.button-primary,
 	.button-secondary {
 		display: inline;
-    	margin-top: 0;
+		margin-top: 0;
 	}
 	.gridblock .p-button-secondary {
 		margin-top: 0;
@@ -367,7 +367,7 @@ h3.site-description {
 	width: 100%;
 	/* Border Radius */
 	-webkit-border-radius: 7px;
-    -moz-border-radius: 7px;
+	-moz-border-radius: 7px;
 	border-radius: 7px;
 }
 .slogan {
@@ -387,7 +387,7 @@ h3.site-description {
 	border: none;
 	/* Border Radius */
 	-webkit-border-radius: 0;
-    -moz-border-radius: 0;
+	-moz-border-radius: 0;
 	border-radius: 0;
 }
 .navbar-default {
@@ -396,9 +396,9 @@ h3.site-description {
 
 /* Nav Center */
 .navbar .navbar-nav {
-  	display: inline-block;
-  	float: none;
-  	vertical-align: top;
+	display: inline-block;
+	float: none;
+	vertical-align: top;
 }
 .navbar-collapse {
 	padding-left: 0;
@@ -418,7 +418,7 @@ h3.site-description {
 /* sm */
 @media (min-width: 768px) {
 	.navbar-default .navbar-nav > li > a {
-    	padding: 3px 25px;
+		padding: 3px 25px;
 	}
 	.navbar-default .navbar-nav > li:last-child > a {
 		border-right: none;
@@ -446,7 +446,7 @@ h3.site-description {
 	padding: 8px;
 }
 .footer-center-items {
-    padding: 0;
+	padding: 0;
 }
 
 /*-----------------------------------------------
@@ -480,8 +480,8 @@ h3.site-description {
 	padding-left: 0px;
 }
 .menu-social ul li {
-    position: relative;
-    display:  inline-block;
+	position: relative;
+	display:  inline-block;
 }
 .menu-social li a {
 	display: inline-block;
@@ -513,13 +513,13 @@ h3.site-description {
 	padding-left: 1px;
 }
 .gridblock ul li:before {
-    content: '';
-    display: inline-block;
-    margin-right: 8px;
-    position: relative;
-    width: 0;
-    height: 0;
-    border-right: 8px solid transparent;
+	content: '';
+	display: inline-block;
+	margin-right: 8px;
+	position: relative;
+	width: 0;
+	height: 0;
+	border-right: 8px solid transparent;
 }
 .gridblock hr {
 	border: 0;
@@ -588,7 +588,7 @@ h3.site-description {
 }
 
 .mod-gallery-fullwidth {
-    width: 100%;
+	width: 100%;
 }
 
 /*------------------------------------------------------------------------
@@ -599,7 +599,7 @@ h3.site-description {
 # Posts
 ------------------------------------------------------------------------*/
 .widget-area {
-    margin-top: 45px;
+	margin-top: 45px;
 	padding: 25px;
 }
 
@@ -616,8 +616,8 @@ h3.site-description {
 
 /* Comments */
 .comment-form-comment label {
-    float: left;
-    padding-right: 15px;
+	float: left;
+	padding-right: 15px;
 }
 
 /*------------------------------------------------------------------------
@@ -628,7 +628,7 @@ h3.site-description {
 ## WooCommerce
 -----------------------------------------------*/
 .woocommerce p.buttons a.button:hover {
-    background-image: none;
+	background-image: none;
 }
 .woocommerce .site-main {
 	padding-top: 20px;
@@ -639,7 +639,7 @@ h3.site-description {
 -----------------------------------------------*/
 .wcflexslider .slides img,
 .wcgallery .gallery .gallery-icon a img {
-    margin-left: -27px;
+	margin-left: -27px;
 }
 
 /*------------------------------------------------------------------------
@@ -652,8 +652,8 @@ h3.site-description {
 	margin-top: 15px;
 }
 .disabled-footer.page-template-page_home .entry-footer {
-    padding: 6px 10px 10px 50px;
-    margin-bottom: -1em;
+	padding: 6px 10px 10px 50px;
+	margin-bottom: -1em;
 }
 .disabled-footer .site-footer {
 	height: auto;
@@ -678,7 +678,7 @@ html, body, .site, .site-content {
 	height: 100%;
 }
 #boldgrid-sticky-wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
 }
