@@ -126,8 +126,8 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			<div class="col-md-12">
 				<div class="call-to-action">
 					<h2 class="slogan">WE'VE GOT A LOT OF FRESH IDEAS TO SHARE</h2>
-					<p class="p-button-secondary">
-						<a class="button-secondary" href="about-us">LEARN MORE</a>
+					<p class="p-button-primary">
+						<a class="button-primary" href="about-us">LEARN MORE</a>
 					</p>
 				</div>
 			</div>

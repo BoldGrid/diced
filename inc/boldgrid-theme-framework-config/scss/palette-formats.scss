@@ -41,15 +41,6 @@
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	.button-primary:hover,
-	.button-primary:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	.form-submit .submit:hover,
-	.form-submit .submit:focus {
-		background: $palette-primary_1;
-		color: $text-contrast-palette-primary_1;
-	}
 
 	/*-----------------------------------------------
 	## 2
@@ -114,6 +105,7 @@
 	.entry-content ul,
 	.entry-content ol,
 	.search-field,
+	blockquote p,
 	.mod-blockquote p,
 	.widget-title,
 	#reply-title,
@@ -142,6 +134,11 @@
 	.form-submit .submit {
 		border: 1px solid $text-contrast-palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
+		&:hover, &:focus {
+			background: $palette-primary_1;
+			border: 1px solid $palette-primary_1;
+			color: $text-contrast-palette-primary_1;
+		}
 	}
 	&.page-template-default {
 		.site-footer, .entry-footer {
@@ -162,16 +159,8 @@
 	}
 
 	/*-----------------------------------------------
-	## 1 - Buttons & Entry Footer
+	## Miscellaneous
 	-----------------------------------------------*/
-	/*.button-secondary {
-		background: $palette-primary_1;
-		color: $text-contrast-palette-primary_1;
-		&:hover, &:focus {
-			background: none;
-			color: $text-contrast-palette-primary-neutral-color;
-		}
-	}*/
 	.page-template-page_home {
 		.entry-footer {
 			background: $palette-primary_1;
@@ -236,14 +225,20 @@
 			}
 		}
 	}
-
-	/*-----------------------------------------------
-	## 3 - Call To Action Button
-	-----------------------------------------------*/
-	.button-secondary {
-		background: $palette-primary_1;
-		border: 1px solid $palette-primary_3;
+	.call-to-action .button-primary,
+	.call-to-action .button-secondary {
+		color: $text-contrast-palette-primary_2;
+	}
+	.background-secondary .button-primary,
+	.background-secondary .button-secondary {
 		color: $text-contrast-palette-primary_1;
+	}
+	.call-to-action .button-primary,
+	.call-to-action .button-secondary,
+	.background-secondary .button-primary,
+	.background-secondary .button-secondary {
+		background: none;
+		border: 1px solid $palette-primary_3;
 		&:hover, &:focus {
 			background: $palette-primary_3;
 			color: $text-contrast-palette-primary_3;
