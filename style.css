@@ -167,6 +167,9 @@ input[type="submit"]:focus,
 	.gridblock .p-button-secondary {
 		text-align: left;
 	}
+	#tertiary-menu {
+		text-align: right;
+	}
 }
 
 /*-----------------------------------------------
