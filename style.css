@@ -228,6 +228,9 @@ h3.site-description {
 	.gridblock .p-button-secondary {
 		text-align: left;
 	}
+	#tertiary-menu {
+		text-align: right;
+	}
 }
 
 /*-----------------------------------------------
