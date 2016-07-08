@@ -1,14 +1,13 @@
 /*
 Theme Name: Diced
 Author: The BoldGrid Team
-Theme URI: http://www.boldgrid.com/diced
-Author URI: http://www.boldgrid.com/the-team
+Theme URI: https://www.boldgrid.com/diced
+Author URI: https://www.boldgrid.com/the-team
 Description: Designed specifically for use with the BoldGrid suite of plugins, all BoldGrid themes are highly customizable, responsive to a wide range of devices, and of course, beautiful. Every BoldGrid theme includes five pre-selected color palettes and an advanced tool for creating your own unique palette. In addition, all themes feature multiple menu locations and widget areas, which are easily customizable to suit your needs. So if you're looking for a theme that looks great, feels modern and professional, and offers plenty of features to make it your own, you've chosen well.
-Version: 1.18
+Version: 1.19
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: boldgrid-diced
-Template: prime
 Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-layout, rtl-language-support, translation-ready, boldgrid-theme-28
 */
 
@@ -30,15 +29,15 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Social Menus
 # GridBLocks
 	## Positioning
-	## Alternates
+	## Et Cetera
 # Modules
 	## Universal
 	## Global
 # Pages
 # Posts
 # Plugins
+	## WP Canvas Gallery
 	## WooCommerce
-	## WC Gallery
 # Footer
 ------------------------------------------------------------------------*/
 
@@ -49,13 +48,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 /*-----------------------------------------------
 ## Background
 -----------------------------------------------*/
-body,
-.custom-background {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
 .background-secondary {
 	margin-top: 0;
 }
@@ -88,135 +80,82 @@ body,
 /*-----------------------------------------------
 ## Typography
 -----------------------------------------------*/
+.woocommerce h2 {
+	font-weight: bold;
+}
+.single .entry-title,
+.archive .entry-title {
+	text-shadow: none;
+}
+.entry-content ul,
+.entry-content ol {
+	text-indent: 7px;
+}
+.p-button-primary,
+.p-button-secondary {
+	white-space: nowrap;
+}
+.slogan,
+.widget {
+	word-wrap: break-word;
+}
+.site-info a,
+.attribution a,
+.entry-content a,
+.entry-footer a,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	text-decoration: underline;
+}
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-footer a:hover,
+.entry-footer a:focus,
+.entry-content .button-primary,
+.entry-content .button-secondary,
+.entry-content input[type="submit"],
+.entry-content .form-submit .submit,
+.button-primary:hover,
+.button-primary:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.form-submit .submit:hover,
+.form-submit .submit:focus,
+.button-secondary:hover,
+.button-secondary:active,
+.site-info a:hover,
+.site-info a:focus,
+.attribution a:hover,
+.attribution a:focus,
+.woocommerce p.buttons a.button:hover {
+	text-decoration: none;
+}
+.site-title,
+.site-description,
+.call-to-action,
+.entry-title,
+.navbar .navbar-collapse,
+#secondary-menu,
+#tertiary-menu,
+#header-upper-right,
+.menu-social ul,
+.site-footer {
+	text-align: center;
+}
+#footer-widget-area {
+	text-align: left;
+}
+
+/* xs */
 .xs-center,
 .mod-img,
 .mod-img-circle,
 .p-button-primary,
 .p-button-secondary {
 	text-align: center;
-}
-.single .entry-title,
-.archive .entry-title {
-	text-shadow: none;
-}
-body {
-	font-weight: 400;
-}
-.page-template-page_home .entry-content h2 {
-	font-weight: 400;
-}
-.entry-title {
-	font-weight: 400;
-	text-align: center;
-}
-.entry-content ul,
-.entry-content ol {
-	text-indent: 7px;
-}
-.entry-content a,
-.entry-footer a {
-	text-decoration: underline;
-}
-.entry-content a:hover,
-.entry-content a:focus,
-.entry-footer a:hover,
-.entry-footer a:focus {
-	text-decoration: none;
-}
-.entry-content .button-primary,
-.entry-content .button-secondary,
-.entry-content input[type="submit"],
-.entry-content .form-submit .submit {
-	text-decoration: none;
-}
-.button-primary:hover,
-.button-primary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-.form-submit .submit:hover,
-.form-submit .submit:focus {
-	text-decoration: none;
-}
-.button-secondary:hover,
-.button-secondary:active {
-	text-decoration: none;
-}
-.p-button-primary,
-.p-button-secondary {
-	white-space: nowrap;
-}
-.site-title {
-	font-weight: normal;
-	text-align: center;
-}
-h3.site-description {
-	text-align: center;
-}
-.call-to-action {
-	text-align: center;
-}
-.slogan {
-	font-weight: 200;
-	line-height: 1.25;
-	word-wrap: break-word;
-}
-#site-navigation {
-	font-weight: 300;
-}
-.navbar .navbar-collapse {
-	text-align: center;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-	text-decoration: underline;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	text-decoration: underline;
-}
-#secondary-menu {
-	text-align: center;
-}
-#footer-center-menu li a,
-#secondary-menu li a,
-#tertiary-menu li a {
-	font-weight: 300;
-}
-#tertiary-menu {
-	text-align: center;
-}
-#header-upper-right {
-	text-align: center;
-}
-.menu-social ul {
-	text-align: center;
-}
-.widget {
-	word-wrap: break-word;
-}
-#footer-widget-area {
-	text-align: left;
-}
-.woocommerce h2 {
-	font-weight: 600;
-}
-.woocommerce p.buttons a.button:hover {
-	text-decoration: none;
-}
-.site-footer {
-	font-weight: 200;
-	text-align: center;
-}
-.site-info a,
-.attribution a {
-	text-decoration: underline;
-}
-.site-info a:hover,
-.site-info a:focus,
-.attribution a:hover,
-.attribution a:focus {
-	text-decoration: none;
 }
 
 /* md */
@@ -262,25 +201,18 @@ h3.site-description {
 	margin-bottom: 15px;
 }
 
-/*-----------------------------------------------
-## Lists
------------------------------------------------*/
-.entry-content ul,
-.entry-content ol {
-	padding-left: 27px;
-}
-ul {
-	margin-left: -5px;
-	padding-left: 0;
-}
-ol {
-	margin-left: -10px;
-	padding-left: 0;
+/* 404 */
+.error404 .page-header {
+	margin: 170px 0 20px;
 }
 
 /*-----------------------------------------------
 ## Links
 -----------------------------------------------*/
+/* Removes blue box in Chrome */
+*:focus {
+	outline: 0;
+}
 
 /*-----------------------------------------------
 ## Buttons
@@ -320,6 +252,7 @@ input[type="submit"],
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
+.call-to-action .p-button-primary,
 .call-to-action .p-button-secondary {
 	margin-bottom: 0;
 	margin-top: 25px;
@@ -355,11 +288,24 @@ hr {
 	height: 2px;
 }
 
+/* Lists */
+.entry-content ul,
+.entry-content ol {
+	padding-left: 27px;
+}
+ul {
+	margin-left: -5px;
+	padding-left: 0;
+}
+ol {
+	margin-left: -10px;
+	padding-left: 0;
+}
+
 /*------------------------------------------------------------------------
 # Header
 ------------------------------------------------------------------------*/
-/* Tagline / Site Description */
-h3.site-description {
+.site-description {
 	margin-bottom: 1em;
 }
 
@@ -384,7 +330,6 @@ h3.site-description {
 /*-----------------------------------------------
 ## Main Menu
 -----------------------------------------------*/
-/* Nav Reset */
 .navbar {
 	background: none;
 	border: none;
@@ -509,7 +454,7 @@ h3.site-description {
 }
 
 /*-----------------------------------------------
-## Alternates
+## Et Cetera
 -----------------------------------------------*/
 .gridblock ul {
 	list-style-type: none;
@@ -582,14 +527,15 @@ h3.site-description {
 	background: none;
 	height: 150px;
 }
+blockquote,
 .mod-blockquote {
 	padding-bottom: 0;
 	padding-top: 0;
 }
+blockquote p,
 .mod-blockquote p {
 	padding-left: 20px;
 }
-
 .mod-gallery-fullwidth {
 	width: 100%;
 }
@@ -628,6 +574,14 @@ h3.site-description {
 ------------------------------------------------------------------------*/
 
 /*-----------------------------------------------
+## WP Canvas Gallery
+-----------------------------------------------*/
+.wcflexslider .slides img,
+.wcgallery .gallery .gallery-icon a img {
+	margin-left: -27px;
+}
+
+/*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
 .woocommerce p.buttons a.button:hover {
@@ -635,14 +589,6 @@ h3.site-description {
 }
 .woocommerce .site-main {
 	padding-top: 20px;
-}
-
-/*-----------------------------------------------
-## WP Canvas Gallery
------------------------------------------------*/
-.wcflexslider .slides img,
-.wcgallery .gallery .gallery-icon a img {
-	margin-left: -27px;
 }
 
 /*------------------------------------------------------------------------
@@ -654,6 +600,8 @@ h3.site-description {
 .site-info {
 	margin-top: 15px;
 }
+
+/* Disabled Footer */
 .disabled-footer.page-template-page_home .entry-footer {
 	padding: 6px 10px 10px 50px;
 	margin-bottom: -1em;
@@ -661,19 +609,6 @@ h3.site-description {
 .disabled-footer .site-footer {
 	height: auto;
 	padding: 15px 0;
-}
-
-/* xs */
-.attribution {
-	padding-bottom: 30px;
-	margin-top: 5px;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.attribution {
-		padding-bottom: 0;
-	}
 }
 
 /* Sticky Footer */
@@ -684,4 +619,17 @@ html, body, .site, .site-content {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
+}
+
+/* xs */
+.attribution {
+	padding-bottom: 30px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.attribution {
+		margin-top: -15px;
+		padding-bottom: 15px;
+	}
 }
