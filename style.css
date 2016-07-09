@@ -15,7 +15,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 >>> TABLE OF CONTENTS:
 --------------------------------------------------------------------------
 # Base Styles
-	## Background
 	## Positioning
 	## Typography
 	## Titles
@@ -28,8 +27,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	## Other Menus
 	## Social Menus
 # GridBLocks
-	## Positioning
-	## Et Cetera
 # Modules
 	## Global
 # Pages
@@ -45,13 +42,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 ------------------------------------------------------------------------*/
 
 /*-----------------------------------------------
-## Background
------------------------------------------------*/
-.background-secondary {
-	margin-top: 0;
-}
-
-/*-----------------------------------------------
 ## Positioning
 -----------------------------------------------*/
 .entry-content {
@@ -63,10 +53,9 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .content-area {
 	margin-top: -125px;
 }
+.background-secondary,
 .post-title-hidden .content-area,
-.home .content-area  {
-	margin-top: 0;
-}
+.home .content-area,
 .single .content-area,
 .archive .content-area {
 	margin-top: 0;
@@ -229,15 +218,11 @@ input[type="submit"],
 
 .button-primary,
 input[type="submit"],
-.form-submit .submit {
-	background: none;
-}
+.form-submit .submit,
 .call-to-action .button-primary:hover,
 .call-to-action .button-primary:focus,
 .background-secondary .button-primary:hover,
-.background-secondary .button-primary:focus {
-	background: none;
-}
+.background-secondary .button-primary:focus,
 .button-secondary:hover,
 .button-secondary:active {
 	background: none;
@@ -354,9 +339,7 @@ ol {
 
 /* Hover */
 .navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-	background: none;
-}
+.navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -375,16 +358,14 @@ ol {
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
-#secondary-menu {
+#secondary-menu,
+#tertiary-menu {
 	background: none;
 }
 #footer-center-menu li a,
 #secondary-menu li a,
 #tertiary-menu li a {
 	padding: 0 1.2em;
-}
-#tertiary-menu {
-	background: none;
 }
 #header-upper-right {
 	width: auto;
@@ -438,23 +419,6 @@ ol {
 /*------------------------------------------------------------------------
 # GridBlocks
 ------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## Positioning
------------------------------------------------*/
-.gridblock h1,
-.gridblock h2,
-.gridblock h3,
-.gridblock h4,
-.gridblock h5,
-.gridblock h6,
-.gridblock p {
-	margin: 10px 0;
-}
-
-/*-----------------------------------------------
-## Et Cetera
------------------------------------------------*/
 .gridblock ul {
 	list-style-type: none;
 	padding-left: 1px;
