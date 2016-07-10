@@ -289,7 +289,6 @@ ol {
 	margin: 50px auto;
 	padding: 25px;
 	width: 100%;
-	/* Border Radius */
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
@@ -308,7 +307,6 @@ ol {
 .navbar {
 	background: none;
 	border: none;
-	/* Border Radius */
 	-webkit-border-radius: 0;
 	-moz-border-radius: 0;
 	border-radius: 0;
@@ -521,16 +519,6 @@ blockquote p,
 .disabled-footer .site-footer {
 	height: auto;
 	padding: 15px 0;
-}
-
-/* Sticky Footer */
-html, body, .site, .site-content {
-	height: 100%;
-}
-#boldgrid-sticky-wrap {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
 }
 
 /* xs */
