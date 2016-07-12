@@ -200,6 +200,12 @@ HTML;
 		'label' => 'black-studio-tinymce',
 	);
 
+	// Menu Locations.
+	$boldgrid_framework_configs['menu']['locations']['secondary'] = 'Secondary Menu, Above Header';
+	$boldgrid_framework_configs['menu']['locations']['tertiary'] = 'Top Right, Above Header';
+	$boldgrid_framework_configs['menu']['locations']['social'] = 'Top of Footer';
+	$boldgrid_framework_configs['menu']['footer_menus'][] = 'social';
+
 	// Name Widget Areas.
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-1']['name'] = 'Call To Action';
 	$boldgrid_framework_configs['widget']['sidebars']['boldgrid-widget-2']['name'] = 'Below Primary Navigation';
