@@ -64,6 +64,9 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .archive .entry-title {
 	padding-top: 20px;
 }
+.single .site-content {
+	margin-top: 125px;
+}
 
 /*-----------------------------------------------
 ## Typography
