@@ -160,7 +160,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'round' => 'floor',
 		'amount' => 3.2,
 	);
-	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.page-template-default h2.entry-title, .page-template-page_home .entry-content h2'] = array(
+	$boldgrid_framework_configs['customizer-options']['typography']['selectors']['.page-template-default .entry-title a, .page-template-page_home .entry-content h2'] = array(
 		'type' => 'subheadings',
 		'round' => 'floor',
 		'amount' => 5.0,
