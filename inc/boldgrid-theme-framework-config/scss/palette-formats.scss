@@ -141,6 +141,7 @@
 	.gridblock ul li:before {
 		border-bottom: 8px solid $text-contrast-palette-primary-neutral-color;
 	}
+	&.archive .site-content,
 	&.single .site-content,
 	#boldgrid-sticky-push,
 	#boldgrid-sticky-filler,
