@@ -265,4 +265,10 @@
 			color: $text-contrast-palette-primary_3;
 		}
 	}
+	&.error404 {
+		.site-content {
+			background: $palette-primary-neutral-color;
+			color: $text-contrast-palette-primary-neutral-color;
+		}
+	}
 }
