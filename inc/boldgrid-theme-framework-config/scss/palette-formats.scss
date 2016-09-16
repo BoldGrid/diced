@@ -79,6 +79,11 @@
 	#footer-widget-area li a {
 		color: $text-contrast-palette-primary_2;
 	}
+	.nav > li > a:focus,
+	.nav > li > a:hover {
+		background: $palette-primary_2;
+		color: $text-contrast-palette-primary_2;
+	}
 
 	/*-----------------------------------------------
 	## 3
