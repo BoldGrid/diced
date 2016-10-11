@@ -110,26 +110,53 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	switch ( $boldgrid_framework_configs['inspiration']['subcategory_key'] ) {
 		case 'Consulting':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'YOUR BUSINESS IS NATURALLY OUR BUSINESS';
 			break;
 		case 'Design':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][3]['default'] = true;
+			$cta_h2 = 'THE TOOLS TO COMPLIMENT YOUR VISION';
 			break;
 		case 'Fashion':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'FORWARD FASHION FOR EVERYONE';
+			break;
+		case 'Fitness':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$cta_h2 = 'ADVENTURE AWAITS AROUND EVERY TURN';
+			break;
+		case 'General':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$cta_h2 = 'GREAT WRITERS MAKE FOR GREAT READING';
 			break;
 		case 'Home Repair':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][2]['default'] = true;
+			$cta_h2 = 'RENOVATING HOMES FOR DECADES';
 			break;
 		case 'Marketing':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'ATTRACT YOUR CUSTOMERS WITH ONE CLICK';
+			break;
+		case 'Music':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$cta_h2 = 'THE PAST NEVER SOUNDED SO GOOD';
+			break;
+		case 'Photography':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$cta_h2 = 'GOOD MEMORIES SHOULD LAST FOREVER';
+			break;
+		case 'Property Management':
+			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$cta_h2 = 'SPEND MORE TIME ENJOYING YOUR STAY';
 			break;
 		case 'Real Estate':
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][1]['default'] = true;
+			$cta_h2 = 'FINDING YOUR HOME JUST GOT A LOT EASIER';
 			break;
 
 		// Default Behavior.
 		default:
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
+			$cta_h2 = 'WE\'VE GOT A LOT OF FRESH IDEAS TO SHARE';
 			break;
 	}
 
@@ -194,7 +221,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		<div class="row call-to-action-wrapper">
 			<div class="col-md-12">
 				<div class="call-to-action">
-					<h2 class="slogan">WE'VE GOT A LOT OF FRESH IDEAS TO SHARE</h2>
+					<h2 class="slogan">$cta_h2</h2>
 					<p class="p-button-secondary">
 						<a class="button-secondary" href="about-us">LEARN MORE</a>
 					</p>
