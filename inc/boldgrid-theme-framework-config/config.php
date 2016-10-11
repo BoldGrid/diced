@@ -121,11 +121,9 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			$cta_h2 = 'FORWARD FASHION FOR EVERYONE';
 			break;
 		case 'Fitness':
-			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
 			$cta_h2 = 'ADVENTURE AWAITS AROUND EVERY TURN';
 			break;
 		case 'General':
-			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
 			$cta_h2 = 'GREAT WRITERS MAKE FOR GREAT READING';
 			break;
 		case 'Home Repair':
@@ -137,15 +135,12 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			$cta_h2 = 'ATTRACT YOUR CUSTOMERS WITH ONE CLICK';
 			break;
 		case 'Music':
-			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
 			$cta_h2 = 'THE PAST NEVER SOUNDED SO GOOD';
 			break;
 		case 'Photography':
-			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
 			$cta_h2 = 'GOOD MEMORIES SHOULD LAST FOREVER';
 			break;
 		case 'Property Management':
-			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
 			$cta_h2 = 'SPEND MORE TIME ENJOYING YOUR STAY';
 			break;
 		case 'Real Estate':
