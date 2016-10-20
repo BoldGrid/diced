@@ -321,6 +321,11 @@ ol {
 .navbar-default {
 	margin-bottom: 0;
 }
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	background: transparent;
+}
 
 /* Nav Center */
 .navbar .navbar-nav {
