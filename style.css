@@ -269,6 +269,9 @@ hr {
 	border: 0;
 	height: 2px;
 }
+.widget_calendar a {
+	text-decoration: underline;
+}
 
 /* Lists */
 .entry-content ul,
@@ -525,6 +528,9 @@ blockquote p,
 }
 .site-info {
 	margin-top: 15px;
+}
+#footer-widget-area {
+	margin-top: 20px;
 }
 
 /* Disabled Footer */

@@ -56,6 +56,9 @@
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
+	.widget.well.widget_calendar a {
+		color: $palette-primary_1;
+	}
 
 	/*-----------------------------------------------
 	## 2
@@ -100,8 +103,23 @@
 			}
 		}
 	}
-	.widget-area {
+	.widget-areas {
 		border: 1px solid $text-contrast-palette-primary_3;
+	}
+	.well,
+	.well .table-striped > tbody > tr:nth-of-type(2n+1),
+	.site-footer .well li > a,
+	.site-footer .widget_calendar a {
+		background: $palette-primary_3;
+	}
+	.well h2.widget-title,
+	.well a,
+	.widget.well,
+	.well caption,
+	.widget.well.widget_calendar,
+	.widget.well.widget_calendar a:hover,
+	#footer-widget-area .well li a {
+		color: $text-contrast-palette-primary_3;
 	}
 	#tertiary-menu li:after,
 	#secondary-menu li:after {
@@ -135,8 +153,7 @@
 	.entry-meta,
 	.entry-meta,
 	.single .entry-title,
-	.archive .entry-title,
-	.menu-social li a {
+	.archive .entry-title {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.entry-content {
@@ -182,6 +199,9 @@
 	.background-primary {
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
+	}
+	.well {
+		border: 1px solid $palette-primary-neutral-color;
 	}
 
 	/*-----------------------------------------------
