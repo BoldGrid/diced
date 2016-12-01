@@ -52,12 +52,17 @@
 	input[type="submit"]:hover,
 	input[type="submit"]:focus,
 	.form-submit .submit:hover,
-	.form-submit .submit:focus {
+	.form-submit .submit:focus,
+	.pager li > a:hover,
+	.pager li > a:focus {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
 	.widget.well.widget_calendar a {
 		color: $palette-primary_1;
+	}
+	blockquote {
+		border-left: 5px solid $palette-primary_1;
 	}
 
 	/*-----------------------------------------------
@@ -175,7 +180,8 @@
 	}
 	.button-primary,
 	input[type="submit"],
-	.form-submit .submit {
+	.form-submit .submit,
+	.pager li > a {
 		border: 1px solid $text-contrast-palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
