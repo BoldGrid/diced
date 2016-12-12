@@ -188,6 +188,9 @@ input[type="submit"]:focus,
 .hentry {
 	margin: 0 auto;
 }
+.hentry:first-child ~ .hentry {
+	margin-top: 50px;
+}
 .heading h3 {
 	margin-top: 10px;
 }
@@ -473,6 +476,7 @@ blockquote p,
 	text-align: center;
 	background: none;
 }
+
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
@@ -485,6 +489,9 @@ blockquote p,
 .paging-navigation {
 	margin-bottom: 20px;
 	margin-top: 15px;
+}
+.nav-links {
+	margin: 25px 0;
 }
 
 /* Search Form */
