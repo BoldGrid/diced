@@ -64,6 +64,9 @@
 	blockquote {
 		border-left: 5px solid $palette-primary_1;
 	}
+	.panel-default {
+		border-color: $palette-primary_1;
+	}
 
 	/*-----------------------------------------------
 	## 2
@@ -82,7 +85,6 @@
 	.widget-title,
 	.widget-area ul,
 	.comment-reply-title,
-	.comments-title,
 	#header-upper-right li.menu-social a,
 	#footer-widget-area li a {
 		color: $text-contrast-palette-primary_2;
@@ -151,6 +153,7 @@
 	.mod-blockquote p,
 	.widget-title,
 	#reply-title,
+	.comments-title,
 	.comments-area,
 	.comments-area a,
 	.widget-area a,
@@ -174,7 +177,10 @@
 	&.blog .site-content,
 	#boldgrid-sticky-push,
 	#boldgrid-sticky-filler,
-	&.mce-content-body {
+	&.mce-content-body,
+	.panel-default > .panel-heading,
+	.panel-body,
+	.panel-footer {
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
