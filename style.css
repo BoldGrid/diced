@@ -210,11 +210,11 @@ input[type="submit"]:focus,
 .button-secondary,
 input[type="submit"],
 .form-submit .submit {
-	padding: 10px 25px;
 	/* Border Radius */
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
+	padding: 10px 25px;
 }
 
 .button-primary,
@@ -299,12 +299,12 @@ ol {
 
 /* Call To Action */
 .call-to-action {
-	margin: 50px auto;
-	padding: 25px;
-	width: 100%;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
+	margin: 50px auto;
+	padding: 25px;
+	width: 100%;
 }
 .slogan {
 	padding: 0 25px;
@@ -415,8 +415,8 @@ ol {
 	padding-left: 0;
 }
 .menu-social ul li {
-	position: relative;
 	display:  inline-block;
+	position: relative;
 }
 .menu-social li a {
 	display: inline-block;
@@ -431,13 +431,13 @@ ol {
 	padding-left: 1px;
 }
 .gridblock ul li:before {
+	border-right: 8px solid transparent;
 	content: '';
 	display: inline-block;
+	height: 0;
 	margin-right: 8px;
 	position: relative;
 	width: 0;
-	height: 0;
-	border-right: 8px solid transparent;
 }
 .gridblock hr {
 	border: 0;
@@ -473,8 +473,8 @@ blockquote p,
 ------------------------------------------------------------------------*/
 /* Search Page */
 .search .jumbotron {
-	text-align: center;
 	background: none;
+	text-align: center;
 }
 
 /*------------------------------------------------------------------------
@@ -548,8 +548,8 @@ blockquote p,
 
 /* Disabled Footer */
 .disabled-footer.page-template-page_home .entry-footer {
-	padding: 6px 10px 10px 50px;
 	margin-bottom: -1em;
+	padding: 6px 10px 10px 50px;
 }
 .disabled-footer .site-footer {
 	height: auto;
