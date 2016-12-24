@@ -174,8 +174,8 @@ input[type="submit"]:focus,
 	display: none;
 }
 .page-template-page_home .entry-content h2 {
-	margin-bottom: 30px;
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .entry-title {
 	margin-top: 1em;
@@ -210,8 +210,8 @@ input[type="submit"]:focus,
 .button-secondary,
 input[type="submit"],
 .form-submit .submit {
-	border-radius: 2px;
 	padding: 10px 25px;
+	border-radius: 2px;
 }
 
 .button-primary,
@@ -229,15 +229,15 @@ input[type="submit"],
 /* Positioning */
 .p-button-primary,
 .p-button-secondary {
-	margin-bottom: 50px;
 	margin-top: 20px;
-	padding-bottom: 10px;
+	margin-bottom: 50px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 }
 .call-to-action .p-button-primary,
 .call-to-action .p-button-secondary {
-	margin-bottom: 0;
 	margin-top: 25px;
+	margin-bottom: 0;
 }
 .gridblock .p-button-secondary {
 	margin-top: -25px;
@@ -265,8 +265,8 @@ input[type="submit"],
 ## Et Cetera
 -----------------------------------------------*/
 hr {
-	border: 0;
 	height: 2px;
+	border: 0;
 }
 .widget_calendar a {
 	text-decoration: underline;
@@ -295,10 +295,10 @@ ol {
 
 /* Call To Action */
 .call-to-action {
-	border-radius: 7px;
 	margin: 50px auto;
 	padding: 25px;
 	width: 100%;
+	border-radius: 7px;
 }
 .slogan {
 	padding: 0 25px;
@@ -312,9 +312,9 @@ ol {
 ## Main Menu
 -----------------------------------------------*/
 .navbar {
-	background: none;
 	border: none;
 	border-radius: 0;
+	background: none;
 }
 .navbar-default {
 	margin-bottom: 0;
@@ -332,8 +332,8 @@ ol {
 	vertical-align: top;
 }
 .navbar-collapse {
-	padding-left: 0;
 	padding-right: 0;
+	padding-left: 0;
 }
 
 /* Hover */
@@ -381,12 +381,12 @@ ol {
 -----------------------------------------------*/
 #header-upper-right li.menu-social:after,
 #secondary-menu li.menu-social:after,
-#footer-center-menu li.menu-social:after  {
+#footer-center-menu li.menu-social:after {
 	content: "";
 }
 #primary-navbar li.menu-social a {
-	border-right: none;
 	padding: 8px;
+	border-right: none;
 }
 #footer-center-menu li.menu-social a {
 	padding: 8px;
@@ -407,8 +407,8 @@ ol {
 	padding-left: 0;
 }
 .menu-social ul li {
-	display:  inline-block;
 	position: relative;
+	display: inline-block;
 }
 .menu-social li a {
 	display: inline-block;
@@ -419,21 +419,21 @@ ol {
 # GridBlocks
 ------------------------------------------------------------------------*/
 .gridblock ul {
-	list-style-type: none;
 	padding-left: 1px;
+	list-style-type: none;
 }
 .gridblock ul li:before {
-	border-right: 8px solid transparent;
-	content: '';
-	display: inline-block;
-	height: 0;
-	margin-right: 8px;
 	position: relative;
+	display: inline-block;
+	margin-right: 8px;
 	width: 0;
+	height: 0;
+	border-right: 8px solid transparent;
+	content: "";
 }
 .gridblock hr {
-	border: 0;
 	height: 2px;
+	border: 0;
 }
 
 /*------------------------------------------------------------------------
@@ -444,13 +444,13 @@ ol {
 ## Global
 -----------------------------------------------*/
 .mod-space-lg {
-	background: none;
 	height: 150px;
+	background: none;
 }
 blockquote,
 .mod-blockquote {
-	padding-bottom: 0;
 	padding-top: 0;
+	padding-bottom: 0;
 }
 blockquote p,
 .mod-blockquote p {
@@ -479,8 +479,8 @@ blockquote p,
 
 /* Paging Navigation */
 .paging-navigation {
-	margin-bottom: 20px;
 	margin-top: 15px;
+	margin-bottom: 20px;
 }
 .nav-links {
 	margin: 25px 0;
@@ -544,8 +544,8 @@ blockquote p,
 	padding: 6px 10px 10px 50px;
 }
 .disabled-footer .site-footer {
-	height: auto;
 	padding: 15px 0;
+	height: auto;
 }
 
 /* xs */
