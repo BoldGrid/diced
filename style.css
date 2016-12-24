@@ -412,7 +412,7 @@ ol {
 /* Social Icons */
 .menu-social ul {
 	margin-top: 2em;
-	padding-left: 0px;
+	padding-left: 0;
 }
 .menu-social ul li {
 	position: relative;
