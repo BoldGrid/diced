@@ -258,7 +258,6 @@ input[type="submit"],
 	.button-primary,
 	.button-secondary {
 		display: inline;
-		margin-top: 0;
 	}
 	.gridblock .p-button-secondary {
 		margin-top: 0;
