@@ -39,11 +39,11 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		'11' => array( '[widget]boldgrid-widget-2' ),
 	);
 
-	// Assign Locations for Generic Header.
+	// Assign Locations for Generic Footer.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
 		'1' => array( '[menu]social' ),
 		'5' => array( '[menu]footer_center' ),
-		'8' => array( '[widget]boldgrid-widget-3' ),
+		'8' => array( '[widget]boldgrid-widget-3', '[action]boldgrid_display_contact_block' ),
 		'11' => array( '[action]boldgrid_display_attribution_links' ),
 	);
 
