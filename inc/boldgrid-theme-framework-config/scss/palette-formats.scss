@@ -16,7 +16,10 @@
 		background: rgba( $palette-primary_1, 0.9 );
 		color: $text-contrast-palette-primary_1;
 	}
-	.site-footer, .site-footer a {
+	.site-footer,
+	.site-footer a,
+	.mark,
+	mark {
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
@@ -66,6 +69,10 @@
 	}
 	.panel-default {
 		border-color: $palette-primary_1;
+	}
+	.widget_price_filter .ui-slider .ui-slider-range,
+	.widget_price_filter .ui-slider .ui-slider-handle {
+		background-color: $palette-primary_1 !important;
 	}
 
 	/*-----------------------------------------------
@@ -149,7 +156,6 @@
 	a,
 	.entry-content ul,
 	.entry-content ol,
-	.search-field,
 	.mod-blockquote p,
 	.widget-title,
 	#reply-title,
@@ -161,7 +167,8 @@
 	.entry-meta,
 	.entry-meta,
 	.single .entry-title,
-	.archive .entry-title {
+	.archive .entry-title,
+	#reviews #comments ol.commentlist li .meta {
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.entry-content {
