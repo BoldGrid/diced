@@ -70,10 +70,6 @@
 	.panel-default {
 		border-color: $palette-primary_1;
 	}
-	.widget_price_filter .ui-slider .ui-slider-range,
-	.widget_price_filter .ui-slider .ui-slider-handle {
-		background-color: $palette-primary_1 !important;
-	}
 
 	/*-----------------------------------------------
 	## 2
@@ -164,7 +160,6 @@
 	.comments-area a,
 	.widget-area a,
 	.nav-links a,
-	.entry-meta,
 	.entry-meta,
 	.single .entry-title,
 	.archive .entry-title,
@@ -317,5 +312,13 @@
 			background: $palette-primary-neutral-color;
 			color: $text-contrast-palette-primary-neutral-color;
 		}
+	}
+	
+	/*-----------------------------------------------
+	## 4 - WooCommerce
+	-----------------------------------------------*/
+	.widget_price_filter .ui-slider .ui-slider-range,
+	.widget_price_filter .ui-slider .ui-slider-handle {
+		background-color: $palette-primary_1 !important;
 	}
 }

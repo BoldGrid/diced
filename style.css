@@ -124,8 +124,7 @@ input[type="submit"]:focus,
 .site-info a:hover,
 .site-info a:focus,
 .attribution a:hover,
-.attribution a:focus,
-.woocommerce p.buttons a.button:hover {
+.attribution a:focus {
 	text-decoration: none;
 }
 .site-title,
@@ -522,9 +521,6 @@ blockquote p,
 /*-----------------------------------------------
 ## WooCommerce
 -----------------------------------------------*/
-.woocommerce p.buttons a.button:hover {
-	background-image: none;
-}
 .woocommerce .site-main {
 	padding-top: 20px;
 }
