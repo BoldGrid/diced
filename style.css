@@ -270,6 +270,10 @@ hr {
 .widget_calendar a {
 	text-decoration: underline;
 }
+input,
+select {
+	color: #333;
+}
 
 /* Lists */
 .entry-content ul,
