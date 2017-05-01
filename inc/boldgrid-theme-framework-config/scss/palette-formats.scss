@@ -313,12 +313,14 @@
 			color: $text-contrast-palette-primary-neutral-color;
 		}
 	}
-	
+
 	/*-----------------------------------------------
 	## 4 - WooCommerce
-	-----------------------------------------------*/
-	.widget_price_filter .ui-slider .ui-slider-range,
-	.widget_price_filter .ui-slider .ui-slider-handle {
+	-----------------------------------------------*/	
+	&.woocommerce .color2-background-color {
 		background-color: $palette-primary_1 !important;
+	}
+	&.woocommerce .color-2-text-contrast {
+		color: $text-contrast-palette-primary_1 !important;
 	}
 }
