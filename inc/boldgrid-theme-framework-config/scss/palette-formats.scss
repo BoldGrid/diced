@@ -323,4 +323,7 @@
 	&.woocommerce .color-2-text-contrast {
 		color: $text-contrast-palette-primary_1 !important;
 	}
+	&.woocommerce p.price.color2-color {
+		color: $palette-primary_1 !important;
+	}
 }
