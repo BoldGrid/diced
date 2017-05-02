@@ -534,6 +534,9 @@ blockquote p,
 .woocommerce-account p.order-again .btn.button-primary {
 	padding: 12px 24px;
 }
+.alert-message .btn.button-primary {
+    color: #333;
+}
 
 /*------------------------------------------------------------------------
 # Footer
