@@ -516,8 +516,9 @@ blockquote p,
 .woocommerce-account p.order-again .btn.button-primary {
 	padding: 12px 24px;
 }
-.alert-message .btn.button-primary {
-    color: #333;
+.alert .btn.button-primary,
+.woocommerce-Message .btn.button-primary {
+	color: #333;
 }
 
 /*------------------------------------------------------------------------
