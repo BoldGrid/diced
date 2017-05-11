@@ -329,6 +329,15 @@ select {
 .navbar-default .navbar-nav > .active > a:focus {
 	background: none;
 }
+
+/* Open */
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+	background: none;
+	border: none; 
+}
+
 /* sm */
 @media (min-width: 768px) {
 	.navbar-default .navbar-nav > li > a {
