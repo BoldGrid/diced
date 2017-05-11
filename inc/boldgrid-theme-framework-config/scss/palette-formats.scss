@@ -67,12 +67,14 @@
 	blockquote {
 		border-left: 5px solid $palette-primary_1;
 	}
-	.panel-default,
-	.navbar-default .navbar-toggle {
+	.panel-default {
 		border-color: $palette-primary_1;
 	}
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: $text-contrast-palette-primary_1;
+	}
+	.navbar-default .navbar-toggle {
+		border-color: $text-contrast-palette-primary_1;
 	}
 
 	/*-----------------------------------------------
