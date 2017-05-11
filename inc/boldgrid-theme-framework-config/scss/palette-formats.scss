@@ -67,8 +67,12 @@
 	blockquote {
 		border-left: 5px solid $palette-primary_1;
 	}
-	.panel-default {
+	.panel-default,
+	.navbar-default .navbar-toggle {
 		border-color: $palette-primary_1;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: $text-contrast-palette-primary_1;
 	}
 
 	/*-----------------------------------------------
@@ -116,12 +120,18 @@
 	.widget-area {
 		border: 1px solid $text-contrast-palette-primary_3;
 	}
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus,	
 	.well,
 	.well .table-striped > tbody > tr:nth-of-type(2n+1),
 	.site-footer .well li > a,
 	.site-footer .widget_calendar a {
 		background: $palette-primary_3;
 	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar {
+		background: $text-contrast-palette-primary_3;
+	}	
 	.well h2.widget-title,
 	.well a,
 	.widget.well,
