@@ -270,9 +270,6 @@
 					text-decoration: underline;
 				}
 			}
-			li > .dropdown-menu {
-				background: $palette-primary_1;
-			}
 		}
 		.dropdown .dropdown-menu > {
 			.active > a {
@@ -292,6 +289,9 @@
 					color: $text-contrast-palette-primary_2;
 				}
 			}
+		}
+		.dropdown-menu {
+			background: $palette-primary_1;
 		}
 	}
 
