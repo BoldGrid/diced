@@ -308,6 +308,9 @@ select {
 .navbar-default .navbar-nav > .open > a:focus {
 	background: transparent;
 }
+.navbar .navbar-nav {
+	margin: 0;
+}
 
 /* Nav Center */
 .navbar-collapse {
