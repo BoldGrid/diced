@@ -9,6 +9,7 @@
 		text-shadow: 0 2px 5px #000;
 		text-decoration: none;
 	}
+
 	/*-----------------------------------------------
 	## 1
 	-----------------------------------------------*/
@@ -23,39 +24,15 @@
 		background: $palette-primary_1;
 		color: $text-contrast-palette-primary_1;
 	}
-	&.page-template-page_home {
-		.site-footer, .entry-footer {
-			background: $palette-primary_1;
-			color: $text-contrast-palette-primary_1;
-			a {
-				color: $text-contrast-palette-primary_1;
-			}
-		}
-		.post-edit-link {
-			color: $text-contrast-palette-primary_1;
-		}
-	}
-	h5,
-	h6 {
-		color: $text-contrast-palette-primary-neutral-color;
-	}
 	body,
 	#tertiary-menu li a,
 	#secondary-menu li a,
-	.site-title a,
-	.slogan {
+	.site-title a {
 		color: $text-contrast-palette-primary_1;
 	}
-	.background-secondary {
-		background: $palette-primary_1;
-		color: $text-contrast-palette-primary_1;
-	}
+	.background-secondary,
 	.button-primary:hover,
 	.button-primary:focus,
-	input[type="submit"]:hover,
-	input[type="submit"]:focus,
-	.form-submit .submit:hover,
-	.form-submit .submit:focus,
 	.pager li > a:hover,
 	.pager li > a:focus {
 		background: $palette-primary_1;
@@ -91,9 +68,6 @@
 	.gridblock hr {
 		background: $palette-primary_2;
 	}
-	.widget-title,
-	.widget-area ul,
-	.comment-reply-title,
 	#header-upper-right li.menu-social a,
 	#footer-widget-area li a {
 		color: $text-contrast-palette-primary_2;
@@ -119,9 +93,6 @@
 			}
 		}
 	}
-	.widget-area {
-		border: 1px solid $text-contrast-palette-primary_3;
-	}
 	.navbar-default .navbar-toggle:hover,
 	.navbar-default .navbar-toggle:focus,	
 	.well,
@@ -139,8 +110,7 @@
 	.widget.well,
 	.well caption,
 	.widget.well.widget_calendar,
-	.widget.well.widget_calendar a:hover,
-	#footer-widget-area .well li a {
+	.widget.well.widget_calendar a:hover {
 		color: $text-contrast-palette-primary_3;
 	}
 	#tertiary-menu li:after,
@@ -162,17 +132,9 @@
 	## Neutral
 	-----------------------------------------------*/
 	a,
-	.entry-content ul,
-	.entry-content ol,
 	.mod-blockquote p,
 	.widget-title,
 	#reply-title,
-	.comments-title,
-	.comments-area,
-	.comments-area a,
-	.widget-area a,
-	.nav-links a,
-	.entry-meta,
 	.single .entry-title,
 	.archive .entry-title,
 	#reviews #comments ol.commentlist li .meta {
@@ -189,22 +151,23 @@
 	&.archive .site-content,
 	&.single .site-content,
 	&.blog .site-content,
+	&.error404 .site-content,
 	#boldgrid-sticky-push,
 	#boldgrid-sticky-filler,
 	&.mce-content-body,
 	.panel-default > .panel-heading,
 	.panel-body,
-	.panel-footer {
+	.panel-footer,
+	.background-primary {
 		background: $palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.button-primary,
-	input[type="submit"],
-	.form-submit .submit,
 	.pager li > a {
 		border: 1px solid $text-contrast-palette-primary-neutral-color;
 		color: $text-contrast-palette-primary-neutral-color;
 	}
+	&.page-template-page_home,
 	&.page-template-default {
 		.site-footer, .entry-footer {
 			background-color: $palette-primary_1;
@@ -213,43 +176,18 @@
 				color: $text-contrast-palette-primary_1;
 			}
 		}
-		.disabled-footer, .entry-footer {
+		.disabled-footer {
 			background: $palette-primary-neutral-color;
 			color: $text-contrast-palette-primary-neutral-color;
 		}
-		.entry-footer {
-			background: $palette-primary_1;
-			color: $text-contrast-palette-primary_1;
-		}
-	}
-	.background-primary {
-		background: $palette-primary-neutral-color;
-		color: $text-contrast-palette-primary-neutral-color;
 	}
 	.well {
 		border: 1px solid $palette-primary-neutral-color;
 	}
 
 	/*-----------------------------------------------
-	## 1 - Buttons & Entry Footer
+	## Navigation
 	-----------------------------------------------*/
-	/*.button-secondary {
-		background: $palette-primary_1;
-		color: $text-contrast-palette-primary_1;
-		&:hover, &:focus {
-			background: none;
-			color: $text-contrast-palette-primary-neutral-color;
-		}
-	}*/
-
-	.page-template-page_home {
-		.entry-footer {
-			background: $palette-primary_1;
-		}
-		.post-edit-link {
-			color: $text-contrast-palette-primary-neutral-color;
-		}
-	}
 	.current_page_ancestor,
 	.current_page_item {
 		a:link, a:visited {
@@ -308,7 +246,7 @@
 	}
 
 	/*-----------------------------------------------
-	## 3 - Call To Action Button
+	## Call To Action Button
 	-----------------------------------------------*/
 	.button-secondary {
 		background: $palette-primary_1;
@@ -319,15 +257,9 @@
 			color: $text-contrast-palette-primary_3;
 		}
 	}
-	&.error404 {
-		.site-content {
-			background: $palette-primary-neutral-color;
-			color: $text-contrast-palette-primary-neutral-color;
-		}
-	}
 
 	/*-----------------------------------------------
-	## 4 - WooCommerce
+	## WooCommerce
 	-----------------------------------------------*/	
 	&.woocommerce .color2-background-color {
 		background-color: $palette-primary_1 !important;

@@ -88,8 +88,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	word-wrap: break-word;
 }
 .site-footer a,
-.site-info a,
-.attribution a,
 .entry-content a,
 .entry-footer a,
 .navbar-default .navbar-nav > li > a:hover,
@@ -107,20 +105,10 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 .entry-footer a:focus,
 .entry-content .button-primary,
 .entry-content .button-secondary,
-.entry-content input[type="submit"],
-.entry-content .form-submit .submit,
 .button-primary:hover,
 .button-primary:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-.form-submit .submit:hover,
-.form-submit .submit:focus,
 .button-secondary:hover,
-.button-secondary:active,
-.site-info a:hover,
-.site-info a:focus,
-.attribution a:hover,
-.attribution a:focus {
+.button-secondary:active {
 	text-decoration: none;
 }
 .site-title,
@@ -201,22 +189,14 @@ input[type="submit"]:focus,
 ## Buttons
 -----------------------------------------------*/
 .button-primary,
-.button-secondary,
-input[type="submit"],
-.form-submit .submit {
+.button-secondary {
 	border-radius: 2px;
 	padding: 10px 25px;
 }
 
 .button-primary,
-input[type="submit"],
-.form-submit .submit,
-.call-to-action .button-primary:hover,
-.call-to-action .button-primary:focus,
 .background-secondary .button-primary:hover,
-.background-secondary .button-primary:focus,
-.button-secondary:hover,
-.button-secondary:active {
+.background-secondary .button-primary:focus {
 	background: none;
 }
 
@@ -228,7 +208,6 @@ input[type="submit"],
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-.call-to-action .p-button-primary,
 .call-to-action .p-button-secondary {
 	margin-bottom: 0;
 	margin-top: 25px;
@@ -282,10 +261,18 @@ select {
 	border-radius: 7px;
 	margin: 50px auto;
 	padding: 25px;
-	width: 100%;
 }
 .slogan {
 	padding: 0 25px;
+}
+
+/* md */
+@media (min-width: 992px) {
+	.call-to-action {
+		margin: 150px auto 200px;
+		padding: 25px 75px 50px;
+		width: 55%;
+	}
 }
 
 /*------------------------------------------------------------------------
@@ -298,7 +285,6 @@ select {
 .navbar {
 	background: none;
 	border: none;
-	border-radius: 0;
 }
 .navbar-default {
 	margin-bottom: 0;
@@ -307,9 +293,6 @@ select {
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
 	background: transparent;
-}
-.navbar .navbar-nav {
-	margin: 0;
 }
 
 /* Nav Center */
@@ -323,16 +306,11 @@ select {
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-	background: none;
-}
-
-/* Open */
+.navbar-default .navbar-nav > .active > a:focus,
 .nav .open > a,
 .nav .open > a:focus,
 .nav .open > a:hover {
 	background: none;
-	border: none; 
 }
 
 /* sm */
@@ -356,10 +334,6 @@ select {
 /*-----------------------------------------------
 ## Other Menus
 -----------------------------------------------*/
-#secondary-menu,
-#tertiary-menu {
-	background: none;
-}
 #footer-center-menu li a,
 #secondary-menu li a,
 #tertiary-menu li a {
@@ -391,23 +365,9 @@ select {
 	padding: 8px;
 }
 
-/* md */
-@media (min-width: 992px) {
-	.call-to-action {
-		margin: 150px auto 200px;
-		padding: 25px 75px 50px;
-		width: 55%;
-	}
-}
-
 /* Social Icons */
 .menu-social ul {
 	margin-top: 2em;
-	padding-left: 0;
-}
-.menu-social ul li {
-	display: inline-block;
-	position: relative;
 }
 .menu-social li a {
 	display: inline-block;
@@ -471,30 +431,11 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Posts
 ------------------------------------------------------------------------*/
-.widget-area {
-	margin-top: 45px;
-	padding: 25px;
-}
-
-/* Paging Navigation */
-.paging-navigation {
-	margin-bottom: 20px;
-	margin-top: 15px;
-}
 .nav-links {
 	margin: 25px 0;
 }
 
-/* Search Form */
-.form-control {
-	display: inline-block;
-}
-
 /* Comments */
-.comment-form-comment label {
-	float: left;
-	padding-right: 15px;
-}
 .panel {
 	background: transparent;
 }
@@ -548,9 +489,6 @@ blockquote p,
 .site-footer {
 	padding-bottom: 15px;
 }
-.site-info {
-	margin-top: 15px;
-}
 #footer-widget-area {
 	margin-top: 20px;
 }
@@ -563,17 +501,4 @@ blockquote p,
 .disabled-footer .site-footer {
 	height: auto;
 	padding: 15px 0;
-}
-
-/* xs */
-.attribution {
-	padding-bottom: 30px;
-}
-
-/* md */
-@media (min-width: 992px) {
-	.attribution {
-		margin-top: -15px;
-		padding-bottom: 15px;
-	}
 }
