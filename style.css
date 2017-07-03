@@ -32,7 +32,6 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 # Pages
 # Posts
 # Plugins
-	## WP Canvas Gallery
 	## WooCommerce
 # Footer
 ------------------------------------------------------------------------*/
@@ -450,14 +449,6 @@ blockquote p,
 /*------------------------------------------------------------------------
 # Plugins
 ------------------------------------------------------------------------*/
-
-/*-----------------------------------------------
-## WP Canvas Gallery
------------------------------------------------*/
-.wcflexslider .slides img,
-.wcgallery .gallery .gallery-icon a img {
-	margin-left: -27px;
-}
 
 /*-----------------------------------------------
 ## WooCommerce
