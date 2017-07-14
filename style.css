@@ -125,7 +125,7 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	text-align: left;
 }
 
-/* xs */
+/* Extra small devices (phones, less than 768px) */
 .xs-center,
 .mod-img,
 .mod-img-circle,
@@ -134,8 +134,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	text-align: center;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.xs-center,
 	.mod-img,
 	.mod-img-circle,
@@ -222,8 +222,8 @@ Tags: custom-background, custom-colors, custom-menu, editor-style, responsive-la
 	margin-top: 15px;
 }
 
-/* sm */
-@media (min-width: 500px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.button-primary,
 	.button-secondary {
 		display: inline;
@@ -265,8 +265,8 @@ select {
 	padding: 0 25px;
 }
 
-/* md */
-@media (min-width: 992px) {
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 	.call-to-action {
 		margin: 150px auto 200px;
 		padding: 25px 75px 50px;
@@ -312,8 +312,8 @@ select {
 	background: none;
 }
 
-/* sm */
-@media (min-width: 768px) {
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 	.navbar-default .navbar-nav > li > a {
 		padding: 3px 25px;
 	}
