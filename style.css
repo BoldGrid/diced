@@ -485,10 +485,6 @@ blockquote p,
 }
 
 /* Disabled Footer */
-.disabled-footer.page-template-page_home .entry-footer {
-	margin-bottom: -1em;
-	padding: 6px 10px 10px 50px;
-}
 .disabled-footer .site-footer {
 	height: auto;
 	padding: 15px 0;
