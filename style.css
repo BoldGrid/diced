@@ -293,6 +293,9 @@ select {
 .navbar-default .navbar-nav > .open > a:focus {
 	background: transparent;
 }
+#primary-navbar ul.navbar-nav {
+	width: 100%;
+}
 
 /* Nav Center */
 .navbar-collapse {
@@ -327,6 +330,9 @@ select {
 	}
 	.navbar .navbar-collapse {
 		text-align: center;
+	}
+	#primary-navbar ul.navbar-nav {
+		width: auto;
 	}
 }
 
